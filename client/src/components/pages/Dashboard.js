@@ -32,8 +32,7 @@ class Dashboard extends Component {
                                     <div className="card bg-primary text-white shadow-lg">
                                         <div className="card-body">
                                             <h5 className="card-title">Users</h5>
-                                            <p className="card-text">With supporting text below as a natural lead-in to
-                                                additional content.</p>
+                                            <p className="card-text">Add new user for admin access</p>
                                             <Link to="/users" className="btn btn-light"><FontAwesomeIcon className="text-primary" icon={faUserAlt}/> Go to Users</Link>
                                         </div>
                                     </div>
@@ -41,30 +40,9 @@ class Dashboard extends Component {
                                 <div className="col-sm-3 p-sm-2">
                                     <div className="card bg-secondary text-white shadow-lg">
                                         <div className="card-body">
-                                            <h5 className="card-title">Special title treatment</h5>
-                                            <p className="card-text">With supporting text below as a natural lead-in to
-                                                additional content.</p>
-                                            <a href="#" className="btn btn-light">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-sm-3 p-sm-2">
-                                    <div className="card bg-info text-white shadow-lg">
-                                        <div className="card-body">
-                                            <h5 className="card-title">Special title treatment</h5>
-                                            <p className="card-text">With supporting text below as a natural lead-in to
-                                                additional content.</p>
-                                            <a href="#" className="btn btn-light">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-sm-3 p-sm-2">
-                                    <div className="card bg-dark text-white shadow-lg">
-                                        <div className="card-body">
-                                            <h5 className="card-title">Special title treatment</h5>
-                                            <p className="card-text">With supporting text below as a natural lead-in to
-                                                additional content.</p>
-                                            <a href="#" className="btn btn-light">Go somewhere</a>
+                                            <h5 className="card-title">Discounts</h5>
+                                            <p className="card-text">Create and view discounts</p>
+                                                <Link to="/discounts" className="btn btn-light"><FontAwesomeIcon className="text-primary" icon={faUserAlt}/> Go to Discounts</Link>
                                         </div>
                                     </div>
                                 </div>

@@ -15,7 +15,7 @@ router.post('/user-add', (req, res) => {
     }
     User.findOne({ email: req.body.email }).then(user => {
         if (user) {
-            return res.status(400).json({ email: 'Email already exists' });
+            return res.status(409).json({ email: 'Email already exists' });
         } else {
             const newUser = new User({
                 name: req.body.name,
@@ -90,6 +90,7 @@ router.post('/login', (req, res) => {
     }
     const email = req.body.email;
     const password = req.body.password;
+    console.log(req.body);
     User.findOne({ email }).then(user => {
         if (!user) {
             return res.status(404).json({ email: 'Email not found' });

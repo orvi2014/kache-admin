@@ -7,8 +7,7 @@ class Landing extends Component {
                 <div className="row">
                     <div className="col s12 center-align">
                         <p className="flow-text grey-text text-darken-1">
-                            Create a (minimal) full-stack app with user authentication via
-                            passport and JWTs
+                           Admin Dashboard for Kache
                         </p>
                         <br />
                         <div className="col s6">

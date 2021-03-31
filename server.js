@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const passport = require('passport');
 const users = require('./routes/api/users');
-
+const discounts = require('./routes/api/discount');
 require('./config/passport')(passport);
 
 const app = express();
@@ -30,7 +30,7 @@ mongoose.connect(db, { useNewUrlParser: true })
 
 app.use(passport.initialize());
 
-app.use('/api', users);
+app.use('/api', users, discounts);
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
